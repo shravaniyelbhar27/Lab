@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+    .form-container {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      color: blue;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .checkbox-group,
+    .radio-group {
+      margin: 10px 0;
+    }
+    .checkbox-group label,
+    .radio-group label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      width: 40%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto;
+
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Survey Form</h2>
+    <form>
+      <input type="text" placeholder="Enter your name" required>
+      <input type="email" placeholder="Enter your email" required>
+      <input type="number" placeholder="Enter your age" required>
+
+      <select>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+      </select>
+
+      <div class="radio-group">
+        <label>Would you recommend this survey form to a friend?</label>
+        <label><input type="radio" name="recommend" value="yes"> Yes</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>Languages and Frameworks known (Check all that apply):</label>
+        <label><input type="checkbox" name="lang" value="java"> Java</label>
+        <label><input type="checkbox" name="lang" value="python"> Python</label>
+        <label><input type="checkbox" name="lang" value="react"> React</label>
+        <label><input type="checkbox" name="lang" value="angular"> Angular</label>
+        <label><input type="checkbox" name="lang" value="spring"> Spring</label>
+      </div>
+
+      <label>Any comments or suggestions?</label>
+      <textarea rows="3"></textarea>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+</body>
+</html>
