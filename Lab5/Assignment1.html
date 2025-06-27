@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card .price {
+      font-weight: bold;
+      color: #222;
+      margin-top: 8px;
+    }
+
+    .video-section {
+      margin-top: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Glenary's Restaurant</h1>
+    <nav>
+      <a href="#">Menu</a>
+      <a href="#">Popular Dishes</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Menu</h2>
+    <div class="menu-items">
+      <div class="card">
+        <img src="https://www.southernliving.com/thmb/3x3cJaiOvQ8-3YxtMQX0vvh1hQw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg" alt="Pizza Supreme">
+        <h3>Pizza Supreme</h3>
+        <p>Pizza sauce, mozzarella, bacon, onion, beef mince, capsicum, pepperoni, mushrooms, olives</p>
+        <p class="price">Price: ₹259</p>
+      </div>
+
+      <div class="card">
+        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg" alt="Paneer Tikka">
+        <h3>Paneer Tikka</h3>
+        <p>Paneer, Yogurt, Ground Spices, Bell Peppers, Onions, Baby Corn, Mushrooms</p>
+        <p class="price">Price: ₹200</p>
+      </div>
+    </div>
+
+    <div class="video-section">
+        <h2>Popular Dishes</h2>
+        <iframe width="560" height="315" src="video.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</body>
+</html>

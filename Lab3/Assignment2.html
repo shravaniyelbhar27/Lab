@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Items and Prices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+
+        form {
+            background-color: white;
+            width: 80%; /* form spans most of the page */
+            margin: 30px auto;
+            padding: 30px;
+            text-align: left; /* left-align inputs and labels */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            color: #421383;
+            display: block;
+            margin: 20px 0 5px;
+        }
+
+        input[type="number"] {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;           /* ensures it's on the next line */
+            margin-top: 25px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .total {
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sample Online Items and Prices</h2>
+
+    <form>
+        <label for="laptop">Laptop ($800 each):</label>
+        <input type="number" id="laptop" min="0" value="0">
+
+        <label for="smartphone">Smartphone ($400 each):</label>
+        <input type="number" id="smartphone" min="0" value="0">
+
+        <label for="headphones">Headphones ($50 each):</label>
+        <input type="number" id="headphones" min="0" value="0">
+
+        <label for="tablet">Tablet ($300 each):</label>
+        <input type="number" id="tablet" min="0" value="0">
+
+        <button type="button">Calculate Total Price</button>
+    </form>
+
+    <div class="total">Total Price: $0</div>
+
+</body>
+</html>
